@@ -1,16 +1,17 @@
 import { useEffect, useState } from 'react';
 import classes from './App.module.css';
-import snowy from './assets/snow.jfif';
-import cloudy from './assets/cloudy.jfif';
 import rain from './assets/rain.jfif';
-import thunderstorm from './assets/thunderstorm.jfif';
+import snowy from './assets/snow.jfif';
 import night from './assets/night.jfif';
+import cloudy from './assets/cloudy.jfif';
+import thunderstorm from './assets/thunderstorm.jfif';
 
 import Input from './components/Input';
 import LeftContainer from './components/LeftContainer';
 import WeatherDetailsList from './components/WeatherDetailsList';
 import WeatherForecastList from './components/WeatherForecastList';
 import { thermometerOutline, waterOutline, cloudyOutline, rainyOutline, sunnyOutline, cloudyNightOutline, thunderstormOutline, snow } from 'ionicons/icons';
+import WeatherNextDaysForecast from './components/WeatherNextDaysForecast';
 
 export type WeatherDetail = {
   title:string,
@@ -31,9 +32,9 @@ export type ForecastDetail = {
 }
 
 function App() {
-  const [mainWeatherDetails, setMainWeatherDetails] = useState<MainWeatherDetails>()
   const [weatherDetails, setWeatherDetails] = useState<WeatherDetail[]>([]);
   const [forecastDetails, setForecastDetails] = useState<ForecastDetail[]>([]);
+  const [mainWeatherDetails, setMainWeatherDetails] = useState<MainWeatherDetails>();
   
   async function getWeather(city:string){
     try {
@@ -167,6 +168,8 @@ function App() {
 
             <WeatherForecastList 
             forecast={forecastDetails}/>
+
+            <WeatherNextDaysForecast />
           </section>
         </section>
       </main>

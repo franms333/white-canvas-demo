@@ -1,5 +1,4 @@
 import { IonIcon } from '@ionic/react';
-import { useEffect } from 'react';
 import { WeatherDetail } from '../App';
 import classes from '../App.module.css';
 

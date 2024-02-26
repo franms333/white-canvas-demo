@@ -1,6 +1,5 @@
 import { IonIcon } from '@ionic/react';
 import { WeatherDetail } from '../App';
-import classes from '../App.module.css';
 import styles from '../Styles.module.css';
 
 type WeatherDetailsList = {

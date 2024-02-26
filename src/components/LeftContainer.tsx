@@ -1,11 +1,10 @@
-import Input from './Input';
-import logo from '../assets/logo.png';
 import { IonIcon } from '@ionic/react';
-import classes from '../App.module.css';
 import styles from '../Styles.module.css';
+import logo from '../assets/logo.png';
+import Input from './Input';
 
-import { MainWeatherDetails } from '../App'; 
 import { cloudOutline } from 'ionicons/icons';
+import { MainWeatherDetails } from '../App';
 
 type LeftContainerProps = {
     mainDetails:MainWeatherDetails

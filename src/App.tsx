@@ -1,17 +1,13 @@
 import { useEffect, useState } from 'react';
 import styles from './Styles.module.css';
 
-import rain from './assets/rain.jfif';
 import snowy from './assets/snow.jfif';
-import night from './assets/night.jfif';
-import cloudy from './assets/cloudy.jfif';
-import thunderstorm from './assets/thunderstorm.jfif';
 
+import { cloudyNightOutline, cloudyOutline, rainyOutline, snow, sunnyOutline, thermometerOutline, thunderstormOutline, waterOutline } from 'ionicons/icons';
 import Input from './components/Input';
 import LeftContainer from './components/LeftContainer';
 import WeatherDetailsList from './components/WeatherDetailsList';
 import WeatherForecastList from './components/WeatherForecastList';
-import { thermometerOutline, waterOutline, cloudyOutline, rainyOutline, sunnyOutline, cloudyNightOutline, thunderstormOutline, snow } from 'ionicons/icons';
 import WeatherNextDaysForecast from './components/WeatherNextDaysForecast';
 
 export type WeatherDetail = {

@@ -1,6 +1,5 @@
 import { IonIcon } from '@ionic/react';
 import { search } from 'ionicons/icons';
-import classes from '../App.module.css';
 import styles from '../Styles.module.css';
 
 import { KeyboardEvent, useRef } from 'react';

@@ -24,7 +24,7 @@ Welcome to WeatherIo, your go-to weather app for instant updates on the forecast
 
 ## Contribution
 
-WeatherNow is an open-source project, and contributions are welcome! If you have ideas for improvements or new features, feel free to fork the repository and submit a pull request.
+WeatherIo is an open-source project, and contributions are welcome! If you have ideas for improvements or new features, feel free to fork the repository and submit a pull request.
 
 ## Credits
 

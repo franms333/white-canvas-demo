@@ -1,6 +1,16 @@
 # Weather.io 🌦️
 ![Weather App](./src/assets/weather_app.png)
 
+[![ViteJS](https://img.shields.io/badge/-ViteJS-green?logo=vite)](https://vitejs.dev/)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[![ReactJS](https://img.shields.io/badge/-ReactJS-blue?logo=react)](https://reactjs.org/)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[![TypeScript](https://img.shields.io/badge/-TypeScript-blue?logo=typescript)](https://www.typescriptlang.org/)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[![Sass](https://img.shields.io/badge/-Sass-pink?logo=sass)](https://sass-lang.com/)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[![Vercel](https://img.shields.io/badge/-Vercel-black?logo=vercel)](https://vercel.com/)
+
 Welcome to WeatherIo, your go-to weather app for instant updates on the forecast! Whether you're planning your day or just curious about the weather, WeatherIo has you covered.
 
 ## Features

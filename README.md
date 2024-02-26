@@ -1,4 +1,5 @@
 # Weather.io 🌦️
+![Weather App](./src/assets/weather_app.png)
 
 Welcome to WeatherIo, your go-to weather app for instant updates on the forecast! Whether you're planning your day or just curious about the weather, WeatherIo has you covered.
 

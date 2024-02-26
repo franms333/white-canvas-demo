@@ -1,6 +1,7 @@
 import { IonIcon } from '@ionic/react';
 import { WeatherDetail } from '../App';
 import classes from '../App.module.css';
+import styles from '../Styles.module.css';
 
 type WeatherDetailsList = {
   details: WeatherDetail[]
@@ -9,14 +10,14 @@ type WeatherDetailsList = {
 const WeatherDetailsList = ({details}:WeatherDetailsList) => {
 
     return ( 
-        <div className={classes.weather_details_list}>
+        <div className={styles['weather-list']}>
           <h3>THUNDERSTORM WITH LIGHT DRIZZLE</h3>
             {details && details.map((weatherDetail)=>(
-              <div key={weatherDetail.title} className={classes.weather_detail_line}>
+              <div key={weatherDetail.title} className={styles['weather-list__item']}>
                 <p>{weatherDetail.title}</p>
                 <p>{weatherDetail.value}</p>
                 <IonIcon 
-                className={classes.weather_detail_icon}
+                className={styles.icon}
                 style={{color:`${weatherDetail.color}`}}
                 icon={weatherDetail.icon}/>
               </div>

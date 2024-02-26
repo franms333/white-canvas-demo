@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import classes from './App.module.css';
+import styles from './Styles.module.css';
+
 import rain from './assets/rain.jfif';
 import snowy from './assets/snow.jfif';
 import night from './assets/night.jfif';
@@ -147,21 +148,21 @@ function App() {
 
 
   return (
-      <main className={classes.app_container}>
-        <img className={classes.bg_image} src={thunderstorm} alt="Snowy entrance to asian shrine" />
+      <main className={styles.app}>
+        <img className={styles['app__bg-image']} src={snowy} alt="Snowy entrance to asian shrine" />
 
-        <section className={classes.container}>
+        <section className={styles.app__container}>
           <LeftContainer 
           mainDetails={mainWeatherDetails}
           change={handleInputChange}/>
 
 
-          <section className={classes.right_container}>
+          <section className={styles['right-side']}>
             <Input
             change={handleInputChange}
             />
 
-            <p className={classes.weather_details_text}>Weather Details...</p>
+            <p>Weather Details...</p>
 
             <WeatherDetailsList 
             details={weatherDetails}/>

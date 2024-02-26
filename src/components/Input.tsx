@@ -1,6 +1,8 @@
 import { IonIcon } from '@ionic/react';
 import { search } from 'ionicons/icons';
 import classes from '../App.module.css';
+import styles from '../Styles.module.css';
+
 import { KeyboardEvent, useRef } from 'react';
 
 type InputProps = {
@@ -17,10 +19,10 @@ const Input = ({change}:InputProps) => {
     }
 
     return ( 
-        <div className={classes.input_container}>
+        <div className={styles.input__container}>
             <input onKeyUp={handleEnterKeyPressed} ref={inputRef} type="text" placeholder='Search Location...'/>
             <IonIcon 
-            className={classes.search_icon}            
+            className={styles.input__container__icon}            
             icon={search}/>
         </div>
     );

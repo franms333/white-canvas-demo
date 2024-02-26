@@ -1,7 +1,6 @@
 import { IonIcon } from '@ionic/react';
-import { cloudyNightOutline, cloudyOutline, rainyOutline, snow, sunnyOutline, thunderstormOutline } from 'ionicons/icons';
-import classes from '../App.module.css';
 import { ForecastDetail } from '../App';
+import styles from '../Styles.module.css';
 
 type WeatherForecastList = {
   forecast:ForecastDetail[]
@@ -10,14 +9,14 @@ type WeatherForecastList = {
 const WeatherForecastList = ({forecast}:WeatherForecastList) => {
     
     return ( 
-      <div className={classes.weather_forecast_list}>
+      <div className={styles['weather-forecast-list']}>
         <h3>Today's Weather Forecast...</h3>
         {forecast && forecast.map((detail)=>(
-          <div key={detail.title} className={classes.weather_forecast_list_item}>
+          <div key={detail.title} className={styles['weather-forecast-list__item']}>
             <IonIcon 
-            className={classes.weather_forecast_list_icon}
+            className={styles.icon}
             icon={detail.icon}/>
-            <div className={classes.date_details_container}>
+            <div className={styles['weather-forecast-list__item__date']}>
               <p>09:00</p>
               <p>{detail.title}</p>
             </div>
